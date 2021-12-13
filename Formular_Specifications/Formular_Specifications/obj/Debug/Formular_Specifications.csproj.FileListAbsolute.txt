@@ -1,0 +1,10 @@
+D:\UIT\.Nam3_Ky1\DTHT\Project\Formular_Specifications\Formular_Specifications\Formular_Specifications\obj\Debug\Formular_Specifications.csproj.AssemblyReference.cache
+D:\UIT\.Nam3_Ky1\DTHT\Project\Formular_Specifications\Formular_Specifications\Formular_Specifications\obj\Debug\Formular_Specifications.Form1.resources
+D:\UIT\.Nam3_Ky1\DTHT\Project\Formular_Specifications\Formular_Specifications\Formular_Specifications\obj\Debug\Formular_Specifications.Properties.Resources.resources
+D:\UIT\.Nam3_Ky1\DTHT\Project\Formular_Specifications\Formular_Specifications\Formular_Specifications\obj\Debug\Formular_Specifications.csproj.GenerateResource.cache
+D:\UIT\.Nam3_Ky1\DTHT\Project\Formular_Specifications\Formular_Specifications\Formular_Specifications\obj\Debug\Formular_Specifications.csproj.CoreCompileInputs.cache
+D:\UIT\.Nam3_Ky1\DTHT\Project\Formular_Specifications\Formular_Specifications\Formular_Specifications\bin\Debug\Formular_Specifications.exe.config
+D:\UIT\.Nam3_Ky1\DTHT\Project\Formular_Specifications\Formular_Specifications\Formular_Specifications\bin\Debug\Formular_Specifications.exe
+D:\UIT\.Nam3_Ky1\DTHT\Project\Formular_Specifications\Formular_Specifications\Formular_Specifications\bin\Debug\Formular_Specifications.pdb
+D:\UIT\.Nam3_Ky1\DTHT\Project\Formular_Specifications\Formular_Specifications\Formular_Specifications\obj\Debug\Formular_Specifications.exe
+D:\UIT\.Nam3_Ky1\DTHT\Project\Formular_Specifications\Formular_Specifications\Formular_Specifications\obj\Debug\Formular_Specifications.pdb
