@@ -25,6 +25,9 @@ namespace Formular_Specifications
         CheckConditionClass checkcondition = new CheckConditionClass();
         PostProcessingClass postprocessing = new PostProcessingClass();
         FunctionMainClass mainfunction = new FunctionMainClass();
+        FunctionInputClass2 inputfunction2 = new FunctionInputClass2();
+        PostProcessingClass2 postprocessing2 = new PostProcessingClass2();
+        FunctionMainClass2 mainfunction2 = new FunctionMainClass2();
         public Form1()
         {
             InitializeComponent();
@@ -49,6 +52,28 @@ namespace Formular_Specifications
             checkcondition.SplitInput(programContent, inputtextspl[0], inputtextspl[1]);
             postprocessing.SplitInput(programContent, inputtextspl[0], inputtextspl[2]);
             mainfunction.SplitInput(programContent, inputtextspl[0]);
+            programContent.Add("\t}");
+
+            programContent.Add("}");
+
+            return programContent;
+        }
+        public List<string> GenerateProgram2()
+        {
+            inputtext = richTextBox1.Text;
+            inputtextrpl = inputtext.Replace(" ", string.Empty).Replace("\n", string.Empty).Replace("\t", string.Empty).Replace("\r", string.Empty);
+            inputtextspl = inputtextrpl.Split(new[] { "pre", "post" }, StringSplitOptions.None);
+            List<string> programContent = new List<string>();
+            programContent.Add("using System;");
+            programContent.Add("namespace FormalSpecification");
+            programContent.Add("{");
+            programContent.Add(string.Format("\tpublic class Program"));
+            programContent.Add("\t{");
+            inputfunction2.SplitInput(programContent, inputtextspl[0]);
+            outputfunction.SplitInput(programContent, inputtextspl[0]);
+            checkcondition.SplitInput(programContent, inputtextspl[0], inputtextspl[1]);
+            postprocessing2.SplitInput(programContent, inputtextspl[0], inputtextspl[2]);
+            mainfunction2.SplitInput(programContent, inputtextspl[0]);
             programContent.Add("\t}");
 
             programContent.Add("}");
@@ -288,12 +313,28 @@ namespace Formular_Specifications
             if (richTextBox1.Text != "" && richTextBox1.Text.Contains("pre") && richTextBox1.Text.Contains("post"))
             {
                 richTextBox2.Clear();
-                List<string> DataOutput = GenerateProgram();
-                for (int i = 0; i < DataOutput.Count; i++)
+                if (comboBox1.Text == "Type I")
                 {
-                    richTextBox2.Text += DataOutput[i] + "\n";
-                    Console.WriteLine(DataOutput[i]);
+                    List<string> DataOutput = GenerateProgram();
+                    for (int i = 0; i < DataOutput.Count; i++)
+                    {
+                        richTextBox2.Text += DataOutput[i] + "\n";
+                        Console.WriteLine(DataOutput[i]);
+                    }
                 }
+                else if (comboBox1.Text == "Type II")
+                {
+                    List<string> DataOutput = GenerateProgram2();
+                    for (int i = 0; i < DataOutput.Count; i++)
+                    {
+                        richTextBox2.Text += DataOutput[i] + "\n";
+                        Console.WriteLine(DataOutput[i]);
+                    }
+                }
+                else
+                {
+                    DialogResult result = MessageBox.Show("Ban chua chon loai bai toan", "Luu y", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }    
                 textBox1.Text = "Program";
 
             }

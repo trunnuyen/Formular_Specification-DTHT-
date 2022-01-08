@@ -16,7 +16,7 @@ namespace Formular_Specifications.Functionalities
             {
                 var = "float ";
             }
-            else if (Var == "Z")
+            else if (Var == "Z" || Var == "N")
             {
                 var = "int ";
             }
@@ -28,6 +28,10 @@ namespace Formular_Specifications.Functionalities
             {
                 var = "string ";
             }
+            else if (Var == "R*")
+            {
+                var = "float[] ";
+            }
             return var;
         }
         public string CreateVarType(string vartype, string varname)
@@ -36,7 +40,7 @@ namespace Formular_Specifications.Functionalities
             {
                 input = "float " + varname + "= 0;";
             }
-            else if (vartype == "Z")
+            else if (vartype == "Z" || vartype == "N")
             {
                 input = "int " + varname + "= 0;";
             }

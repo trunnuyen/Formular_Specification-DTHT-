@@ -55,10 +55,13 @@
     <Compile Include="Functionalities\CheckConditionClass.cs" />
     <Compile Include="Functionalities\CheckVarTypeClass.cs" />
     <Compile Include="Functionalities\FunctionInputClass.cs" />
+    <Compile Include="Functionalities\FunctionInputClass2.cs" />
     <Compile Include="Functionalities\FunctionMainClass.cs" />
+    <Compile Include="Functionalities\FunctionMainClass2.cs" />
     <Compile Include="Functionalities\FunctionOutputClass.cs" />
     <Compile Include="Functionalities\InputVarClass.cs" />
     <Compile Include="Functionalities\PostProcessingClass.cs" />
+    <Compile Include="Functionalities\PostProcessingClass2.cs" />
     <Compile Include="Functionalities\UndoRedoClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

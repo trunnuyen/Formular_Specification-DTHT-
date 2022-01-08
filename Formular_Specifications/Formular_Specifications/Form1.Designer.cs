@@ -70,6 +70,7 @@ namespace Formular_Specifications
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -457,11 +458,24 @@ namespace Formular_Specifications
             this.richTextBox3.TabIndex = 10;
             this.richTextBox3.Text = "";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Type I",
+            "Type II"});
+            this.comboBox1.Location = new System.Drawing.Point(254, 114);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(129, 24);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.Text = "Type";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 595);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -526,6 +540,7 @@ namespace Formular_Specifications
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
